@@ -39,8 +39,8 @@
      inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1920"
-     inkscape:window-height="1138"
-     inkscape:window-x="-8"
+     inkscape:window-height="1178"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
      inkscape:snap-grids="false" />
@@ -52,7 +52,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -123,54 +123,46 @@
        height="34.285713"
        x="35.479294"
        y="813.79071" />
-    <g
-       id="g3195"
-       transform="translate(317.14286,237.14286)">
-      <rect
-         y="409.52316"
-         x="382.16101"
-         height="124.24941"
-         width="234.24942"
-         id="rect3015-5"
-         style="fill:#008000;fill-rule:evenodd;stroke:#000000;stroke-width:1.03629982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3011-5"
-         y="459.5051"
-         x="445"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="459.5051"
-           x="445"
-           id="tspan3013-1"
-           sodipodi:role="line">App</tspan><tspan
-           id="tspan3148"
-           y="509.5051"
-           x="445"
-           sodipodi:role="line">Server</tspan></text>
-    </g>
-    <g
-       id="g3190"
-       transform="translate(304.28571,97.142857)">
-      <rect
-         y="785.95178"
-         x="395.73242"
-         height="124.24941"
-         width="234.24942"
-         id="rect3015-5-7"
-         style="fill:#d40000;fill-rule:evenodd;stroke:#000000;stroke-width:1.03629982px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-      <text
-         sodipodi:linespacing="125%"
-         id="text3168"
-         y="858.07648"
-         x="415.71426"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         xml:space="preserve"><tspan
-           y="858.07648"
-           x="415.71426"
-           id="tspan3170"
-           sodipodi:role="line">Database</tspan></text>
-    </g>
+    <rect
+       style="fill:#deaa87;fill-rule:evenodd;stroke:#000000;stroke-width:1.03629982000000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3015-5"
+       width="234.24942"
+       height="124.24941"
+       x="699.30389"
+       y="646.66602" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="762.14288"
+       y="696.64795"
+       id="text3011-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3013-1"
+         x="762.14288"
+         y="696.64795">App</tspan><tspan
+         sodipodi:role="line"
+         x="762.14288"
+         y="746.64795"
+         id="tspan3148">Server</tspan></text>
+    <rect
+       style="fill:#de8787;fill-rule:evenodd;stroke:#000000;stroke-width:1.03629982000000000px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect3015-5-7"
+       width="234.24942"
+       height="124.24941"
+       x="700.01813"
+       y="883.09467" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="720"
+       y="955.21936"
+       id="text3168"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3170"
+         x="720"
+         y="955.21936">Database</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
