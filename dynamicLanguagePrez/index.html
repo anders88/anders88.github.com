@@ -33,6 +33,7 @@
     <link href="css/moon.css" class="theme" rel="stylesheet" media="screen" />
     <link href="css/prez.css" rel="stylesheet" media="screen" />
 <script type="text/javascript">
+	
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-332358-13']);
@@ -45,6 +46,7 @@
   })();
 
 </script>
+  <script src="js/jquery-1.7.1.js"></script>
   </head>
   <body data-duration="10">
     <div id="presentation-counter">Loading...</div>
@@ -197,17 +199,20 @@ end
 		<div class="slide" id="jqueryeksempel">		
 			<section class="middle">
 			<script type="text/javascript">
-				function displayDate()
+				function runcommand()
 				{
 					eval(document.getElementById("idtext").value);
+					//document.all.h3.style.color = {color.red}
+					//document.all.tags("h3").innerHtml = 'Noe'
+					//$("h3").css('color', 'red');
 				}
 			</script>
-			<h3 id='idnoe'>Dum overskrift</h3>
+			<h3>Eksempel p&aring jquery</h3>
 			<textarea rows="3" cols="65" id="idtext">
-document.getElementById('idnoe').innerHTML= 'En annen overskrift'
+$("h3").css('color', 'red');
 			</textarea>
 			<br/>
-			<button type="button" onclick="displayDate();">Kjør kommando</button>
+			<button type="button" onclick="runcommand();">Kjør kommando</button>
 
 
 			</section>
