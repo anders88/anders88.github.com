@@ -95,34 +95,32 @@
           </section>
         </div>
 		<div class="slide" id="agenda">
-			<h1>Agenda</h1>
+			<section class="middle">
+			<h2>Agenda</h2>
 			<ul>
 				<li>Dynamiske spr&aring;k - hva gj&oslash;r dem spesielle?</li>
 				<li>Beskrivelse av tre dynamiske språk</li>					
 				<li>Hvor st&aring;r vi - hvor g&aring;r vi?</li>
 			</ul>
+			</section>
 		</div>		
-		<div class="slide" id="wikipedia-slide">
-		  <section class="small">
-			<center><h1>Fra Wikipedia</h1></center>
-			<p>
-			Dynamic programming language is a term used broadly in computer science to describe a class of high-level programming languages that execute at <b><i>runtime many common behaviors that other languages might perform during compilation</b></i>, if at all. These behaviors could <b><i>include extension of the program, by adding new code</i></b>, by extending objects and definitions, or by modifying the type system, all during program execution. These behaviors can be emulated in nearly any language of sufficient complexity, but dynamic languages provide direct tools to make use of them. Many of these features were first implemented as native features in the Lisp programming language.</p>
-		  </section>
+		<div class="slide" id="spk2010">
+			<section class="middle">
+			<h3>SPK Perform 2011</h3>
+			<ul data-build>
+				<li>Automatisk godkjenning av Pensjon</li>
+				<ul>
+					<li>Ny og kritisk funksjonalitet</li>
+					<li>Fortløpende justering var n&oslash;dvendig
+				</ul>				
+				<li>Det tar en helg &aring; produksjonssette ny kode</li>
+			</ul>
+			</section>
 		</div>
-		<div class="slide" id="twentyfourseven">
+		<div class="slide" id="konfmodig">
 		  <section class="middle">
-			<h3>Vi kan endre p&aring; programmet mens det kj&oslash;rer</h3>
-			<p><img class="drop" src="media/open247.jpg"/></p>
-		  </section>
-		</div>
-		<div class="slide" id="thatisdangerous">
-		  <section class="middle">
-			<p><img class="drop" src="media/ludvig.jpg"/></p>
-		  </section>
-		</div>
-		<div class="slide" id="notnottest">
-		  <section class="middle">
-			<h3>Jeg sa endre mens det kj&oslash;rer ikke programmere mens det kj&oslash;rer</h3>
+			<h2><a href="http://sterkblanding.no/blog/2010/11/07/konfigurasjon-for-de-modige/">Konfigurasjon for de modige</a></h2>
+			&Oslash;rjan M. Lillevik, Sterk blanding 7/11-2010
 		  </section>
 		</div>
 		<div class="slide" id="ruby">
@@ -132,15 +130,11 @@
 				<h2>(JRuby)</h2>
 			</section>
 		</div>
-		<div class="slide" id="konfmodig">
-		  <section class="middle">
-			<h2><a href="http://sterkblanding.no/blog/2010/11/07/konfigurasjon-for-de-modige/">Konfigurasjon for de modige</a></h2>
-			&Oslash;rjan M. Lillevik, Sterk blanding 7/11-2010
-		  </section>
-		</div>
+
 		<div class="slide" id="oppgaveruby">
 		  <section class="middle">
 			<h3>Regler for utf&oslash;ring av oppgaver i eget skriptspr&aring;k</h3>
+			<p><img class="drop" src="media/javaruby.svg" border="5"/></p>
 		  </section>
 		</div>
 		<div class="slide" id="eksautoutfoer">
@@ -169,6 +163,13 @@ end
 			</ul>
 			<section>
 		</div>
+		<div class="slide" id="twentyfourseven">
+		  <section class="middle">
+			<h3>Dynamiske spr&aring;k lar oss endre applikasjonen mens den kj&oslash;rer</h3>
+			<p><img class="drop" src="media/open247.jpg"/></p>
+		  </section>
+		</div>
+		
 		<div class="slide" id="javascripttitle">
 			<section class="middle">
 			<h1>Javascript</h1>
@@ -210,9 +211,6 @@ end
 				function runcommand()
 				{
 					eval(document.getElementById("idtext").value);
-					//document.all.h3.style.color = {color.red}
-					//document.all.tags("h3").innerHtml = 'Noe'
-					//$("h3").css('color', 'red');
 				}
 			</script>
 			<h3>Eksempel p&aring jquery</h3>
@@ -250,6 +248,22 @@ $("h3").css('color', 'red');
 				<h3>Larm (Statnett)</h3>
 				<p><img class="drop" src="media/larmark.svg" width="80%" height="80%"/></p>
 			</section>
+		</div>
+		<div class="slide" id="htmlform">
+			<section class="middle">
+			<p>
+				<pre class="lang-js" style="margin: 10%">
+				<form>
+Navn          <input type="text"/><br/>
+Addresse      <input type"text"/><br/>
+Postnummer    <input type="text"><br/>
+Sted          <input type="text"/><br>
+<input type="submit" value="Registrer"/>
+				</form>
+				</pre>
+			</p>
+			</section>
+			
 		</div>
 		<div class="slide" id="nodeark">
 			<section class="middle">
