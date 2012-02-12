@@ -298,33 +298,54 @@ Sted          <input type="text"/><br>
             <p><img src="media/alljscriptark.svg" width="80%" height="80%"/></p>
           </section>
         </div>
-		<div class="slide" id="alljs">
+		<div class="slide" id="jsgrownup">
           <section class="middle">
 			<h3>Javascript er blitt voksen</h3>
             <p><img src="media/grownupjs.png" width="80%" height="80%"/></p>
           </section>
         </div>
 		
-		<div class="slide" id ="backtothefuture">
-			<section class="middle" style="background-color:black;">
-				<img class="drop" src="media/backtothefuture.jpg" width="80%" height="80%"/>
-			</section>
-		</div>
-		<div class="slide" id ="calculator">
+		<div class="slide" id ="mooreslaw">		
 			<section class="middle">
-				<img class="drop" src="media/calculator.jpg" width="80%" height="80%"/>
+				<h3>Moores lov (1965)</h3>
+				<p>Hastigheten på cpu og antall komponenter p&aring; en krets dobles hver 18. m&aring;ned (popul&aelig;rt sagt)</p>
+				<p><img src="media/moore.svg" width="60%" height="60%"/></p>
 			</section>
 		</div>
-		<div class="slide" id ="functintro">		
+		
+		
+		<div class="slide" id ="concurrencyforspeed">		
 			<section class="middle">
-				<img class="drop" src="media/calctom.jpg" width="80%" height="80%"/>
+				<h3>Betyr det at det ikke lenger kan g&aring; fortere ?</h3>
+				<ul data-build>
+					<li>For &aring; &oslash;ke farten mer m&aring; man parallellprosessesere</li>
+					<li>Dette gj&oslash;r programmer mer kompliserte fordi man m&aring; passe p&aring; at to tr&aring;der ikke forandrer samme data samtidig
+				</ul>
 			</section>
 		</div>
-		<div class="slide" id ="clojurecode">		
-			<section class="middle" style="background-color:black;">
-				<img class="drop" src="media/iclojure.jpg" width="80%" height="80%"/>
+		<div class="slide" id ="javaconcurrency">		
+			<section class="middle">
+				<img class="drop" src="media/javaconcurrency.jpg" width="60%" height="60%"/>
 			</section>
 		</div>
+		
+		<div class="slide" id ="lisptotherescue">		
+			<section class="middle">
+				<ul data-build>
+					<li>Problemet kommer n&aring;r data forandrer seg</li>
+					<li>L&oslash;sning er data ikke har lov til &aring forandre seg</li>
+				</ul>
+			</section>
+		</div>
+		
+		<div class="slide" id="husk3lag">
+			<section class="middle">
+				<h3>Husk at...</h3>
+				<p><img class="drop" src="media/trelagsark.svg" width="80%" height="80%"/></p>
+			</section>
+		</div>
+
+		
 		<div class="slide" id="lisp-slide">
           <section class="middle">
             <h2>Lisp (1958)</h2>
@@ -333,6 +354,56 @@ Sted          <input type="text"/><br>
           </section>
         </div>
 		
+		<div class="slide" id="htmlgenerering">
+			<section class="middle">
+			<h3>Generering av html</h3>
+			<p>
+			<pre style="margin: 10%">&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello&lt;/h1&gt;
+        &lt;p&gt;Hello Anders&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+			</pre>
+			</p>
+			</section>
+		</div>
+		
+		<div class="slide" id="javahtml">
+			<section class="middle">
+			<h3>Generering av html med java</h3>
+			<p>
+			<pre class="lang-js" style="margin: 10%">public String generateAnswer(String toName) {
+    StringBuilder result = new StringBuilder();
+    result.append("&lt;html&gt;");
+    result.append("&lt;body&gt;";
+    result.append("&lt;h1&gt;Hello&lt;/h1");
+    result.append("&lt;p&gt;");
+    result.append("Hello ");
+    result.append(toName);
+    result.append("&lt;/p&gt;");
+    result.append("&lt;/body&gt;");
+    result.append("&lt;/html&gt;");
+    return result.toString();
+}
+			</pre>
+			</p>
+			</section>
+		</div>
+		
+		<div class="slide" id="lisphtml">
+		<section class="middle">
+			<h3>Generering av html med Lisp</h3>
+			<p>
+			<pre class="lang-js" style="margin: 10%">(html [:body
+  [:h1 "Hello"]
+  [:p "Hello " toName]])
+			</pre>
+			</p>
+			</section>
+		</div>
+		
+						
 		<div class="slide" id="homoiconic">
 			<section class="middle">
 				<h2>Homoiconic</h2>
@@ -355,56 +426,9 @@ Sted          <input type="text"/><br>
 			</section>
 		</div>
 		
-		<div class="slide" id ="determer">		
-			<section class="middle">
-				<h3>Men vent det er jo en annen stor fordel...</h3>
-			</section>
-		</div>
 		
-		<div class="slide" id ="mooreslaw">		
-			<section class="middle">
-				<h3>Moores lov (1965)</h3>
-				Hastigheten på cpu og antall komponenter p&aring; en krets dobles hver 18. m&aring;ned (popul&aelig;rt sagt)
-			</section>
-		</div>
+	
 		
-		<div class="slide" id ="concurrencyforspeed">		
-			<section class="middle">
-				<h3>Betyr det at det ikke lenger kan g&aring; fortere ?</h3>
-				<ul data-build>
-					<li>For &aring; &oslash;ke farten mer m&aring; man parallellprosessesere</li>
-					<li>Dette gj&oslash;r programmer mer kompliserte fordi man m&aring; passe p&aring; at to tr&aring;der ikke forandrer samme data samtidig
-				</ul>
-			</section>
-		</div>
-		<div class="slide" id ="javaconcurrency">		
-			<section class="middle">
-				<img class="drop" src="media/javaconcurrency.jpg" width="60%" height="60%"/>
-			</section>
-		</div>
-		
-		<div class="slide" id ="lisptotherescue">		
-			<section class="middle">
-				<h3>L&oslash;sningen</h3>
-				<ul data-build>
-					<li>Data har ikke lov &aring; forandre seg</li>
-					<li>I Lisp har ikke data lov til &aring; forandre seg</li>
-				</ul>
-			</section>
-		</div>
-		
-		<div class="slide" id="husk3lag">
-			<section class="middle">
-				<h3>Husk at...</h3>
-				<p><img class="drop" src="media/trelagsark.svg" width="80%" height="80%"/></p>
-			</section>
-		</div>
-		
-		<div class="slide" id ="backtothefutureagain">
-			<section class="middle" style="background-color:black;">
-				<img class="drop" src="media/backtothefuture.jpg" width="80%" height="80%"/>
-			</section>
-		</div>
 		
 		<div class="slide" id ="clojure">
 			<section class="middle">			
@@ -416,10 +440,9 @@ Sted          <input type="text"/><br>
 						<ul data-build>
 							<li>JVM (Java Virtual Machine)</li>
 							<li>CLR (Common Language Runtime)</li>
-							<li>og i browser (p&aring; en m&aring;te)</li>							
+							<li>og i browser</li>							
 						</ul>
 						</li>
-						<li>Det er lett &aring; kalle javakode fra clojure og omvendt</li>
 					</ul>
 				</div>
 				
