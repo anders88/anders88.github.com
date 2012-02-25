@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<!--
+	Copyright Anders Karlsen
+
+  License and copyright notice for the HTML5Rocks slides:
+
+  Copyright 2011 Google Inc.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+
+  Original slides: Marcin Wichary (mwichary@google.com)
+  Modifications: Chrome DevRel Team (chrome-devrel@googlegroups.com)
+                 Alex Russell (slightlyoff@chromium.org)
+                 Brad Neuberg
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+    <title>Dynamsike spr&aring;k av Anders Karlsen</title>
+    <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css" />
+    <link href="css/prettify.css" rel="stylesheet"/>
+    <link href="css/moon.css" class="theme" rel="stylesheet" media="screen" />
+    <link href="css/prez.css" rel="stylesheet" media="screen" />
+<script type="text/javascript">
+	
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-332358-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  <script src="js/jquery-1.7.1.js"></script>
+  </head>
+  <body data-duration="10">
+    <div id="presentation-counter">Loading...</div>
+
+    <div class="presentation">
+      <div class="slides">
+
+        <div class="slide" id="landing-slide">
+          <style>
+            p#disclaimer-message {
+              font-size: 20px;
+            }
+            #landing-slide p.help, #landing-slide p.help span.key {
+              font-size: 22px;
+            }
+          </style>
+          <section class="middle">
+            <p><img src="media/steria.svg"/></p>
+            <p>This presentation is an HTML5 website</p>
+            <p id="disclaimer-message">Presentation template from <a href="http://html5rocks.com/">http://html5rocks.com/</a></p>
+            <!-- <p>Press <span class="key">PgDn</span> to advance.</p> -->
+          </section>
+          <aside class="note">
+            <section>
+              Welcome! (This field is for presenter notes and commentary.)
+            </section>
+          </aside>
+        </div>
+
+        <div class="slide" id="title-slide">
+          <style>
+            #title-slide p {
+              margin: 0;
+            }
+            #title-slide p.author {
+              margin: 0.6em 0 0 0;
+              color: black;
+              font-weight: bold
+            }
+          </style>
+          <section class="middle">
+            <h1>Dymamiske spr&aring;k</h1>
+            <hr>
+            <p class="author">Anders.Karlsen@steria.no</p>
+            <p>@anderskar</p>
+          </section>
+        </div>		
+		<div class="slide" id="spk2010">
+			<section class="middle">
+			<h3>SPK Perform 2010</h3>
+			<ul data-build>
+				<li>Automatisk godkjenning av Pensjon</li>
+				<ul>
+					<li>Ny og kritisk funksjonalitet</li>
+					<li>Fortløpende justering var n&oslash;dvendig
+				</ul>				
+				<li>Det tar en helg &aring; produksjonssette ny kode</li>
+			</ul>
+			</section>
+		</div>
+		<div class="slide" id="konfmodig">
+		  <section class="middle">
+			<h2><a href="http://sterkblanding.no/blog/2010/11/07/konfigurasjon-for-de-modige/">Konfigurasjon for de modige</a></h2>
+			<p style="font-size:150%;">&Oslash;rjan M. Lillevik, Sterk blanding 7/11-2010<p>
+		  </section>
+		</div>
+		<div class="slide" id="ruby">
+			<section class="middle">
+				<h1>Ruby</h1>
+				<p><img class="drop" src="media/Ruby_logo.svg"/></p>
+				<h2>(JRuby)</h2>
+			</section>
+		</div>
+
+		<div class="slide" id="oppgaveruby">
+		  <section class="middle">
+			<h3>Regler for utf&oslash;ring av oppgaver i eget skriptspr&aring;k</h3>
+			<p><img class="drop" src="media/javaruby.svg" border="5"/></p>
+		  </section>
+		</div>
+		<div class="slide" id="eksautoutfoer">
+			<section class="middle">
+			<h3>Eksempel p&aring; konfigurasjon</h3>
+			<ul style="margin-right: 2%;">
+			<pre> 
+			
+def skal_autoutfoere(sak, beregnet_pensjon)
+  grenseverdi_krav_refusjon_status_utb = 345
+  grenseverdi_etterbetaling_refusjon_status_utb = 454
+  grenseverdi_krav_utb_status_ube = 0
+  grenseverdi_etterbetaling_utb = 10
+  grenseverdi_endring_redusert_pensjon = 4234
+
+
+  sak.finnesAapenSakFraFoer(skalSjekkeOmDetFinnesAapenSakFraFoer)
+  bp.harUbehandletKravMedStatusUTBOverGrenserverdi
+  bp.harKravPaaRefusjonspensjonOverGrenseverdi
+  bp.harEtterbetalingPaaRefusjonspensjonOverGrenseverdi
+  bp.harEtterbetalingMotMedlemOverGrenseverdi
+  bp.harEndringILoependePensjonOverGrenseverdi
+  bp.harFlereProdukterEllerParalellePensjonsuttak()
+end
+			</pre>
+			</ul>
+			<section>
+		</div>
+		<div class="slide" id="twentyfourseven">
+		  <section class="middle">
+			<h3>Dynamiske spr&aring;k lar oss endre applikasjonen mens den kj&oslash;rer</h3>
+			<p><img class="drop" src="media/open247.jpg"/></p>
+		  </section>
+		</div>
+		
+		<div class="slide" id="javascripttitle">
+			<section class="middle">
+			<h1>Javascript</h1>
+				<p/>
+				<table border="0" align="center">
+					<tr>
+						<td/><td>
+						<img src="media/firefox.png" style="width:100px; height:100px; float:left;" />
+						</td><td/>
+					</tr>
+					<tr>
+						<td>
+						<img src="media/Internet_Explorer.png" style="width:100px; height:100px; float:left;" />
+						</td><td/><td>
+						<img src="media/opera.png" style="width:100px; height:100px; float:left;" />
+						</td>
+					</tr>
+					<tr>
+						<td/><td>
+						<img src="media/chrome.png" style="width:100px; height:100px; float:left;" />
+						</td><td/>
+					</tr>
+				</table>
+			</section>
+		</div>
+		<div class="slide" id="javascripthistorie">		
+			<section class="middle">
+				<h3>Javascript av Brendan Eich for Netscape i 1995</h3>	
+				<p/>
+				<blockquote style="line-height:200%; font-size:150%;">
+				&laquo;JS had to “look like Java” only less so, [it had to] be Java’s <b>dumb kid brother or boy-hostage sidekick</b>. Plus, I had to be <b>done in ten days</b> or something worse than JS would have happened.&raquo;
+				</blockquote>
+			</section>
+		</div>
+		
+		<div class="slide" id="jqueryeksempel">		
+			<section class="middle">
+			<script type="text/javascript">
+				function runcommand()
+				{
+					eval(document.getElementById("idtext").value);
+				}
+			</script>
+			<h3>Eksempel p&aring javascript</h3>
+			<textarea rows="3" cols="65" id="idtext">
+$("h3").css('color', 'red');
+			</textarea>
+			<br/>
+			<button type="button" onclick="runcommand();">Kjør kommando</button>
+
+
+			</section>
+			
+			
+		</div>		
+		<div class="slide" id="trelagsarkitektur">
+			<section class="middle">
+				<h3>3-lags arkitektur</h3>
+				<p><img class="drop" src="media/trelagsark.svg" width="80%" height="80%"/></p>
+			</section>
+		</div>
+		
+		<div class="slide" id="htmlform">
+			<section class="middle">
+			<p>
+				<pre class="lang-js" style="margin: 10%">
+				<form>
+Navn          <input type="text"/><br/>
+Addresse      <input type"text"/><br/>
+Postnummer    <input type="text"><br/>
+Sted          <input type="text"/><br>
+<input type="submit" value="Registrer"/>
+				</form>
+				</pre>
+			</p>
+			</section>
+			
+		</div>
+		<div class="slide" id="nodeark">
+			<section class="middle">
+				<h3>Hva da med ?</h3>
+				<p><img class="drop" src="media/nodeark.svg" width="80%" height="80%"/></p>
+			</section>
+		</div>
+		<div class="slide" id="node-logo-slide">
+          <section class="middle">
+            <p><img src="media/node_js.png"/></p>
+          </section>
+        </div>
+		<div class="slide" id ="nodejs">			
+			<section class="middle">
+			<h3>Fordeler med node.js</h3>
+			<ul>			
+				<li>Bruker javascript i browser</li>
+				<li>Samme kode på klient og server</li>
+				<li>Dynamsisk språk som kan oppdateres uten nedetid</li>
+				<li>Referanser (ref <a href="http://nodejs.org">nodejs.org</a>)
+					<ul>
+						<li>Ebay</li>
+						<li>Linkedin</li>
+						<li>Yahoo</li>
+						<li>Microsoft</li>
+					</ul>
+			</ul>
+			</section>
+		</div>
+		<div class="slide" id="jsgrownup">
+          <section class="middle">
+			<h3>Javascript er blitt voksen</h3>
+            <p><img src="media/grownupjs.png" width="80%" height="80%"/></p>
+          </section>
+        </div>
+		
+		<div class="slide" id ="mooreslaw">		
+			<section class="middle">
+				<h3>Moores lov (1965)</h3>
+				<p>Hastigheten på cpu og antall komponenter p&aring; en krets dobles hver 18. m&aring;ned (popul&aelig;rt sagt)</p>
+				<p><img src="media/moore.png" width="60%" height="60%"/></p>
+			</section>
+		</div>
+		
+		<div class="slide" id ="javaconcurrency">		
+			<section class="middle">
+				<img class="drop" src="media/javaconcurrency.jpg" width="60%" height="60%"/>
+			</section>
+		</div>
+		
+		<div class="slide" id ="lisptotherescue">		
+			<section class="middle">
+				<h3>Alts&aring;</h3>
+				<ul>
+					<li>Problemet kommer n&aring;r data forandrer seg</li>
+					<li>L&oslash;sning er data ikke har lov til &aring forandre seg</li>
+				</ul>
+			</section>
+		</div>
+		
+		
+		<div class="slide" id="lisp-slide">
+          <section class="middle">
+            <h2>Lisp (1958)</h2>
+            <p><img class="drop" src="media/mccarthy.png"/></p>
+            <p>John McCarthy (1927-2011)</p>
+          </section>
+        </div>
+		
+		<div class="slide" id="htmlgenerering">
+			<section class="middle">
+			<h3>Generering av html</h3>
+			<p>
+			<pre style="margin: 10%">&lt;html&gt;
+    &lt;body&gt;
+        &lt;h1&gt;Hello&lt;/h1&gt;
+        &lt;p&gt;Hello Anders&lt;/p&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+			</pre>
+			</p>
+			</section>
+		</div>
+		
+		<div class="slide" id="javahtml">
+			<section class="middle">
+			<h3>Generering av html med java</h3>
+			<p>
+			<pre class="lang-js" style="margin: 10%">public String generateAnswer(String toName) {
+    StringBuilder result = new StringBuilder();
+    result.append("&lt;html&gt;");
+    result.append("&lt;body&gt;";
+    result.append("&lt;h1&gt;Hello&lt;/h1&gt;");
+    result.append("&lt;p&gt;");
+    result.append("Hello ");
+    result.append(toName);
+    result.append("&lt;/p&gt;");
+    result.append("&lt;/body&gt;");
+    result.append("&lt;/html&gt;");
+    return result.toString();
+}
+			</pre>
+			</p>
+			</section>
+		</div>
+		
+		<div class="slide" id="lisphtml">
+		<section class="middle">
+			<h3>Generering av html med Lisp</h3>
+			<p>
+			<pre class="lang-js" style="margin: 10%">(html [:body
+  [:h1 "Hello"]
+  [:p "Hello " toName]])
+			</pre>
+			</p>
+			</section>
+		</div>
+		
+						
+		<div class="slide" id="homoiconic">
+			<section class="middle">
+				<h2>Homoiconic</h2>
+				<p style="font-size:150%; margin-left: 20%; margin-right: 20%;">
+				Languages in which program code is represented as the language's fundamental data type are called 'homoiconic'
+				</p>
+			</section>			
+		</div>
+		<div class="slide" id ="compiler">		
+			<section class="middle">
+				<h3>Compiler arkitektur</h3>
+				<img class="drop" src="media/Compiler.svg" width="90%" height="90%"/>
+			</section>
+		</div>
+		
+		<div class="slide" id ="compilerLisp">		
+			<section class="middle">
+				<h3>Lisp "Compiler" arkitektur</h3>
+				<img class="drop" src="media/CompilerLisp.svg" width="90%" height="90%"/>
+			</section>
+		</div>
+		
+		
+	
+		
+		
+		<div class="slide" id ="clojure">
+			<section class="middle">			
+				<img src="media/Clojure.svg" id="bg" style="position:fixed; top:0; left:0; width:100%; height:100%;"/>
+				<div style = "position:relative; z-index:1;"/>
+					<h1>Clojure</h1>
+					<ul data-build>
+						<li>Clojure er en dialekt av Lisp</li>
+						<li>Clojure kan kj&oslash;re p&aring;
+						<ul data-build>
+							<li>JVM (Java Virtual Machine)</li>
+							<li>CLR (Common Language Runtime)</li>
+							<li>og i browser</li>							
+						</ul>
+						</li>
+					</ul>
+				</div>
+				
+			</section>
+		</div>
+		
+		<div class="slide" id ="oppsumering">
+			<section class="middle">			
+				<h3>Hva s&aring;?</h3>				
+			</section>
+		</div>
+		
+		
+		
+        <div class="slide" id="outro-slide">
+          <style>
+            #outro-slide h2 {
+              color: black;
+              letter-spacing: -1px;
+              font-size: 64px;
+            }
+            p.resource-link {
+              font-size: 36px;
+              line-height: 1.15em;
+              margin: 0.8em 0;
+            }
+            p.resource-link a {
+              color: blue;
+              text-decoration: underline;
+              border: none;
+            }
+            span.anders {
+              font-weight: bold;
+              font-size: 48px;
+              letter-spacing: -2px;
+            }
+            img.wtf {
+              background: -webkit-linear-gradient(top, rgb(213,206,166) 0%, rgb(244,236,190) 62%, rgb(213,206,201) 63%, rgb(247,234,234) 100%);
+              background:    -moz-linear-gradient(top, rgb(213,206,166) 0%, rgb(244,236,190) 62%, rgb(213,206,201) 63%, rgb(247,234,234) 100%);
+              background:      -o-linear-gradient(top, rgb(213,206,166) 0%, rgb(244,236,190) 62%, rgb(213,206,201) 63%, rgb(247,234,234) 100%)
+              background:     -ms-linear-gradient(top, rgb(213,206,166) 0%, rgb(244,236,190) 62%, rgb(213,206,201) 63%, rgb(247,234,234) 100%);
+              background:         linear-gradient(top, rgb(213,206,166) 0%, rgb(244,236,190) 62%, rgb(213,206,201) 63%, rgb(247,234,234) 100%);
+              border-top: 24px solid white;
+              border-bottom: 48px solid white;
+              border-left: 12px solid white;
+            border-right: 12px solid white;
+            }
+          </style>
+          <section class="middle">
+            <h2>Takk for meg!</h2>
+			
+			<p><img src="media/AndersK.jpg"/></p>
+			<p>Slides  : <a href="http://anders88.github.com/dynamicLanguagePrez">http://anders88.github.com/dynamicLight</a></p>
+			<p>Orginal : <a href="http://anders88.github.com/dynamicLanguagePrez">http://anders88.github.com/dynamicLanguagePrez</a></p>
+            <p class="resource-link"><span class="anders">Anders.Karlsen@steria.no</span><br>
+              <a href="http://twitter.com/anderskar">@anderskar</a><br/>
+			  
+            </p>
+          </section>
+        </div>		
+        
+      </div> <!-- slides -->
+      <style>
+      #speaker-note {
+        position:absolute;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 50%;
+        z-index: 50;
+        background-color: rgba(255, 255, 255, 0.95);
+        overflow: auto;
+        padding: 2px 20px;
+        -webkit-transition: top 0.5s ease-in-out;
+        -moz-transition: top 0.5s ease-in-out;
+        -o-transition: top 0.5s ease-in-out;
+        transition: top 0.5s ease-in-out;
+      }
+      #speaker-note.invisible {
+        top: 101%;
+      }
+      </style>
+      <div id="speaker-note" class="invisible" style="display: none;">
+      </div> <!-- speaker note -->
+    </div> <!-- presentation -->
+
+    <!--[if lt IE 9]>
+    <script
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">
+    </script>
+    <script>CFInstall.check({ mode: "overlay" });</script>
+    <![endif]-->
+
+    <script src="js/ender.min.js"></script>
+    <script src="js/prefixfree.min.js"></script>
+    <script src="js/prettify.js"></script>
+    <script src="js/utils.js"></script>
+    <script>prettyPrint();</script>
+  </body>
+</html>
