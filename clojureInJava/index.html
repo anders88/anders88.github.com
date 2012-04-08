@@ -27,7 +27,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
-    <title>A presentation from Anders Karlsen</title>
+    <title>Clojure in a java world</title>
     <link href="http://fonts.googleapis.com/css?family=Droid+Sans|Droid+Sans+Mono" rel="stylesheet" type="text/css" />
     <link href="css/prettify.css" rel="stylesheet"/>
     <link href="css/moon.css" class="theme" rel="stylesheet" media="screen" />
@@ -86,13 +86,49 @@
             }
           </style>
           <section class="middle">
-            <h1>Title goes here</h1>
+            <h1>Clojure in a java world</h1>
             <hr>
             <p class="author">Anders.Karlsen@steria.no</p>
             <p>@anderskar</p>
           </section>
         </div>
-
+		<div class="slide" id="jsonGenerator">
+			<section class="middle">
+				<h3>Generating JSON</h3>
+			</section>
+		</div>
+		<div class="slide" id="jsonExample">
+            <section class="middle">
+            <h3>JSON example</h3>
+			<pre style="margin-left: 2%; margin-right: 2%">{
+    "Person" : {"firstName" : "Darth", "lastName" : "Vader" } ,
+    "Person" : {"firstName" : "Anakin", "lastName" : "Skywalker" } 
+}
+			</pre>
+            </section>
+		</div>
+        <div class="slide" id="reqListJsonGen">
+            <section class="middle">
+            <h3>What if ?</h3>
+            <pre style="margin-left: 2%; margin-right: 2%">[
+    person [firstName Darth lastName Vader]
+    person [firstName Anakin lastName Skywalker]
+]
+            </pre>
+            </section>
+        </div>
+        <div class="slide" id="clojureInTest">
+        <section class="middle">
+            <h3>Least intrusive use</h3>
+            Example: <a href="https://github.com/anders88/clojure-json-generator">https://github.com/anders88/clojure-json-generator</a>
+        </div>
+        </section>
+        
+        <div class="slide" id="nextStep">
+            <section class="middle">
+                <h3>The next step</h3>
+            </section>
+        </div>
 
         <div class="slide" id="outro-slide">
           <style>
