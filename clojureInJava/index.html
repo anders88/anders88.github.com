@@ -257,11 +257,7 @@
         </div>
         </section>
         
-        <div class="slide" id="nextStep">
-            <section class="middle">
-                <h3>The next step</h3>
-            </section>
-        </div>
+        
         
         <div class="slide" id="leiningen">
             <section class="middle">
@@ -271,6 +267,56 @@
             </section>
         </div>
 		
+		<div class="slide" id="nextStep">
+            <section class="middle">
+                <h3>The next step</h3>
+            </section>
+        </div>
+		
+		<div class="slide" id="javaeespiketask">
+			<section class="middle">
+				<h3>Java EE Spike</h3>
+				<p>Web application</p>
+				<p>Create persons (first name, last name and birth date)</p>
+				<p>Searching by name</p>
+			</section>
+		</div>
+		
+		<div class="slide" id="createFormSketch">
+			<section class="middle">
+			<h3>Create person (sketch)</h3>
+			<form action="createPerson.html" method="POST"><p><label for="first_name">First name</label><input id="first_name" name="first_name" type="text" value=""></p><p><label for="last_name">Last name</label><input id="last_name" name="last_name" type="text" value=""></p><p><label for="birth_date">Birth date</label><input id="birth_date" name="birth_date" type="text" value=""></p><input name="createPerson" type="submit" value="Create person"></form>
+			</section>
+		</div>
+		
+		<div class="slide" id="searchFormSketch">
+			<section class="middle">
+				<h3>Find people (sketch)</h3>
+				<form action="findPeople.html" method="GET"><input id="name_query" name="name_query" type="text"><input name="findPeople" type="submit" value="Find people"></form><li>Darth Vader (25.05.1977)</li><li>Darth Maul (19.05.1999)</li>
+			</section>
+		</div>
+		
+		<div class="slide" id="javaeespike">
+			<section class="middle">
+				<h3>Java EE Spike</h3>
+				<a href="https://github.com/anders88/java-ee-spike-with-clojure/tree/completeUsingBridge">https://github.com/anders88/java-ee-spike-with-clojure/tree/completeUsingBridge</a>
+			</section>
+		</div>
+		
+		
+		<div class="slide" id="summary">
+			<section class="middle">
+				<h3>Summary</h3>
+				<ul data-build>
+					<li>Clojure is a Lisp dialect for the jvm</li>
+					<li>Clojure code can use any java library</li>
+					<li>You only need to include the clojure jar to use it</li>
+					<li>Clojure projects can use Leiningen as a build tool</li>
+					<li>Clojure code can be precompiled as a "java-class" to be called from java</li>
+					<li>Clojure is fun!</li>
+				</ul>
+			</section>
+		</div>
 
         <div class="slide" id="outro-slide">
           <style>
