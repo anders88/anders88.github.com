@@ -46,7 +46,7 @@
 
 </script>
   </head>
-  <body data-duration="10">
+  <body>
     <div id="presentation-counter">Loading...</div>
 
     <div class="presentation">
@@ -92,6 +92,139 @@
             <p>@anderskar</p>
           </section>
         </div>
+		
+		<div class="slide" id="whoisthis">
+          <section class="middle">
+            <p><img class="drop" src="media/mccarthy.png"/></p>
+          </section>
+        </div>
+		
+		<div class="slide" id="lisp-slide">
+          <section class="middle">
+            <h2>Lisp (1958)</h2>
+            <p><img class="drop" src="media/mccarthy.png"/></p>
+            <p>John McCarthy (1927-2011)</p>
+          </section>
+        </div>
+		
+		
+		<div class="slide" id="whatIsClojure">
+          <section class="middle">
+            <h3>What is Clojure ?</h3>
+            <ul class="block" style="margin-bottom: 2em">
+              <li>Clojure is a Lisp dialect for
+                the JVM.</li>
+              <li>It can call Java code directly.</li>
+			  <li>Java code can call Clojure</li>
+              <li>There's also ClojureCLR for
+                the .NET platform.</li>
+              <li>You can run it in your browser using ClojureScript.</li>
+            </ul>
+          </section>
+        </div>
+		
+		<div class="slide" id="ccc">
+			<section class="middle">
+			<h3>Lisp/Clojure Crash Course</h3>
+			</section>
+		</div>
+		
+		<div class="slide" id="functions-slide">
+          <style>
+            #functions-slide span.paren-slide-animate {
+              position: relative;
+              left: -230px;
+              -webkit-transition: 1.5s ease;			  
+            }
+          </style>
+          <section class="middle">
+            <pre class="lang-clj big">println<span class="paren-slide">(</span>"Hello world!");</pre>
+          </section>
+        </div>
+
+		
+		<div class="slide" id="function-definition-slide">
+          <section class="middle">
+            <pre class="lang-clj big" style="margin-left: 2%; margin-right: 2%">(defn hello [name]     
+     (str "Hello " name)
+)                      </pre>
+          </section>
+        </div>
+
+        <div class="slide" id="function-example-slide">
+          <section class="middle">
+            <pre class="lang-clj big" style="margin-left: 2%; margin-right: 2%">&gt;&gt; (hello "sailor!")
+"Hello sailor!"     </pre>
+          </section>
+        </div>
+		
+		<div class="slide" id="devEnviroment">
+		  <section class="middle">
+			<h3>Development enviroment</h3>
+			<p>Eclipse</p>
+			<p>IntelliJ</p>
+			<p>Emacs</p>
+			<p>Something else ?</p>
+          </section>        
+		</div>
+		
+		<div class="slide" id="fizzbuzz-task">
+          <style>
+            #fizzbuzz-task div {
+              margin: 2em;
+            }
+            #fizzbuzz-task p {
+              margin: 0.1em;
+            }
+          </style>
+            <section class="middle">
+                <h3>FizzBuzz</h3>
+                <div>
+                    <p>1</p>
+                    <p>2</p>
+                    <p><b>Fizz</b></p>
+                    <p>4</p>    
+                    <p><b>Buzz</b></p>
+                    <p>...</p>
+                    <p>14</p>
+                    <p><b>FizzBuzz</b></p>
+                    <p>16</p>
+                </div>
+            </section>
+        </div>
+		
+		<div class="slide" id="fizzBuzzDemo">
+			<section class="middle">
+				<h3>FizzBuzz Demo</h3>
+				<a href="https://github.com/anders88/fizzbuzzclojure">https://github.com/anders88/fizzbuzzclojure</a>
+			</section>
+		</div>
+		
+		<div class="slide" id="soYouWannaUseClojure">
+			<section class="middle">
+				<h3>So you wanna use Clojure</h3>
+			</section>
+		</div>
+		
+		<div class="slide" id="yoWannaUseWhat">
+			<section class="middle">
+				<h3>You wanna use what?</h3>
+				<p><img class="drop" src="media/dilbert-pointy-haired-boss.png"/></p>
+			</section>
+		</div>
+		
+		<div class="slide" id="allYouNeed">
+			<section class="middle">
+			<h3>Least intrusive use</h3>
+			<pre style="margin-left: 2%; margin-right: 2%">&lt;dependency&gt;
+   &lt;groupId&gt;org.clojure&lt;/groupId&gt;
+   &lt;artifactId&gt;clojure&lt;/artifactId&gt;
+   &lt;version&gt;1.3.0&lt;/version&gt;
+&lt;/dependency&gt;
+			</pre>
+			</section>
+		</div>
+		
 		<div class="slide" id="jsonGenerator">
 			<section class="middle">
 				<h3>Generating JSON</h3>
@@ -119,8 +252,8 @@
         </div>
         <div class="slide" id="clojureInTest">
         <section class="middle">
-            <h3>Least intrusive use</h3>
-            Example: <a href="https://github.com/anders88/clojure-json-generator">https://github.com/anders88/clojure-json-generator</a>
+            <h3>JSON generator</h3>
+            <a href="https://github.com/anders88/clojure-json-generator">https://github.com/anders88/clojure-json-generator</a>
         </div>
         </section>
         
@@ -133,9 +266,11 @@
         <div class="slide" id="leiningen">
             <section class="middle">
                 <h3>Leiningen</h3>
-				<a href="https://github.com/technomancy/leiningen">https://github.com/technomancy/leiningen</a>
+				<p>Maven clojure style</p>
+				<p><a href="https://github.com/technomancy/leiningen">https://github.com/technomancy/leiningen</a></p>
             </section>
         </div>
+		
 
         <div class="slide" id="outro-slide">
           <style>
@@ -214,10 +349,10 @@
     </script>
     <script>CFInstall.check({ mode: "overlay" });</script>
     <![endif]-->
-
-    <script src="js/ender.min.js"></script>
+	<script src="js/ender.min.js"></script>
     <script src="js/prefixfree.min.js"></script>
     <script src="js/prettify.js"></script>
+    <script src="js/prettify/lang-clj.js"></script>
     <script src="js/utils.js"></script>
     <script>prettyPrint();</script>
   </body>

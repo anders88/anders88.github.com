@@ -169,8 +169,14 @@
         _makeBuildList: function() {
             this._buildList = [];
             this._buildCycle = false;
+            this._parenSlide = false;
             if (disableBuilds) { return; }
             if (this._node) {
+                this._buildList = $("span.paren-slide", this._node);
+                if (this._buildList.length) {
+                    this._parenSlide = true;
+                    return;
+                }
                 this._buildList = $('[data-cycle] > *', this._node);
                 if (this._buildList.length) {
                     this._buildCycle = true;
@@ -225,7 +231,10 @@
             if (!this._buildList.length) {
                 return false;
             }
-            if (this._buildCycle) {
+            if (this._parenSlide) {
+                $("span.paren-slide", this._node).addClass("paren-slide-animate");
+                this._buildList = [];
+            } else if (this._buildCycle) {
                 $(this._buildCyclePrev).addClass("to-cycle");
                 this._buildCyclePrev = this._buildList.shift();
                 $(this._buildCyclePrev).removeClass("to-cycle");
@@ -395,7 +404,7 @@
 
     /*
      * Presentation timer: liberally borrowed from http://github.com/LeaVerou/CSSS
-     *
+     */
     (function() {
         var duration = parseInt($("body").attr("data-duration"), 10);
         if (duration > 0) {
@@ -408,5 +417,5 @@
             createTimer("timer", duration);
             createTimer("nyan-timer", duration);
         }
-    })();*/
+    })();
 })();
